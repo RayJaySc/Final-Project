@@ -87,7 +87,7 @@ LANDING
 
 .column__container {
   display: flex;
-  padding: 80px 0;
+  padding: 80px 0 0 0;
 }
 
 .column__container--left {
@@ -140,4 +140,21 @@ h1 {
     width: 40%;
     font-size: 16px;
     font-weight: 700;
+}
+
+.para__customers{
+    color: #a0aec0;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.logo__img--strip{
+    height: 26px;
+    padding: 0 128px 0 0;
+    margin: 16px 0 0 0;
+    opacity: 50%;
+}
+
+.customer__container{
+    
 }
