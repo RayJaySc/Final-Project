@@ -96,6 +96,7 @@ LANDING
 
 .column__right {
   width: 60%;
+  padding-left: 16px;
 }
 
 h1 {
@@ -103,10 +104,40 @@ h1 {
 }
 
 .purple {
-  color: purple;
+  color:rgb(100, 21, 255);
 }
 
 .p__column--left {
   font-size: 18px;
   padding: 32px 0;
+  line-height: 1.5;
+}
+
+.input__container {
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgba(0, 0, 0, 0.212);
+
+}
+
+.email__input{
+    border: none;
+    font-size: 16px;
+    padding: 20px 20px 20px 32px;
+    background-color: transparent;
+    width: 60%;
+}
+
+.btn__start{
+    background-color:rgb(100, 21, 255);
+    padding: 16px 0px;
+    margin: 8px 8px 8px 0px;
+    color: white;
+    border: none;
+    border-radius: 70px;
+    width: 40%;
+    font-size: 16px;
+    font-weight: 700;
 }
