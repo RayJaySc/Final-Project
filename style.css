@@ -26,6 +26,7 @@ nav {
   align-items: center;
   margin: 0 auto;
   margin-top: 32px;
+  max-width: 1150px;
 }
 
 ul {
@@ -234,7 +235,7 @@ QUALITY WORK
 
 */
 
-#quality_work {
+#quality__work {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,6 +291,15 @@ STEPS
   justify-content: center;
   padding: 80px 0;
 }
+
+.steps__content--wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
 
 .steps__img {
   max-width: 600px;
@@ -826,4 +836,89 @@ text-align: center;
 
 .socials{
   margin-left: calc(12%);
+}
+
+/* SMALL COMPUTERS */
+@media(max-width: 1150px){
+
+  nav{
+    max-width: 768px;
+  }
+
+  .column__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column__container--left{
+  width: 100%;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.input__container{
+  max-width: 450px;
+  width: 100%;
+}
+
+#quality__work{
+  flex-direction: column;
+  text-align: center;
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.quality__btn--purple{
+  margin-bottom: 40px;
+}
+
+.steps__content--wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.steps__subheader{
+  margin-left: 60px;
+}
+
+.steps__img--wrapper {
+  order: 1;
+}
+
+.steps__text--container {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 0;
+}
+
+.steps__header{
+  margin-left: 60px;
+}
+
+.steps__img{
+  padding-top: 50px;
+  padding-left: 60px;
+}
+
+.valuesimg__container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.values__img{
+  margin-top: 40px;
+}
 }
