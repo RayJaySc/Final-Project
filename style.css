@@ -911,6 +911,10 @@ text-align: center;
   padding-left: 60px;
 }
 
+.values__container{
+  margin: 0 auto;
+}
+
 .valuesimg__container{
   flex-direction: column;
   justify-content: center;
@@ -920,5 +924,56 @@ text-align: center;
 
 .values__img{
   margin-top: 40px;
+}
+
+.plans{
+  flex-direction: column;
+}
+
+.business__plan--wrapper,
+.plan__wrapper{
+  width: calc(70%);
+}
+
+.flex__container{
+  flex-direction: column;
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.test__img{
+  margin: 0 auto;
+}
+
+.test__container{
+  margin: 0 auto;
+}
+
+.test__person{
+  margin: 0 auto;
+}
+
+.get__started--buttons{
+  display: flex;
+
+}
+
+.start,
+.contact{
+  align-items: center;
+  margin-left: 32px;
+}
+
+
+
+.get__started--contents{
+  display: flex;
+  flex-direction: column;
+}
+
+.get__started--text{
+  margin-bottom: 16px;
+  text-align: center;
 }
 }
