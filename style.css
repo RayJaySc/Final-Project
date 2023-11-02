@@ -6,12 +6,18 @@
   box-sizing: border-box;
 }
 
+html{scroll-behavior: smooth;}
 
+button{cursor: pointer;}
 
 .row {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
 }
 
 /*
@@ -27,6 +33,24 @@ nav {
   margin: 0 auto;
   margin-top: 32px;
   max-width: 1150px;
+}
+
+.nav__link:hover{
+  color: rgb(100,21,255);
+  border-bottom:2px solid rgb(100, 21, 255);
+  opacity: 1;
+}
+
+.logo__text{
+  font-weight: 800;
+  margin-left: 12px;
+  font-size: 24px;
+  color: #243363;
+  transition: all 300ms ease;
+}
+
+.logo__text:hover {
+  color: #6415ff;
 }
 
 ul {
@@ -1095,7 +1119,7 @@ text-align: center;
 .values__para {
   text-align: center;
   margin: 0 auto;
-  max-width: 120%; /* Adjust the width as needed */
+  max-width: 120%;
 }
 
 .value__top{
@@ -1151,4 +1175,6 @@ text-align: center;
   .link{
     font-size: 14px;
   }
+
+
 }
