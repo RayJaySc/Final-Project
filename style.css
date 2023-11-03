@@ -6,14 +6,76 @@
   box-sizing: border-box;
 }
 
-html{scroll-behavior: smooth;}
+html{
+  scroll-behavior: smooth;
+}
 
-button{cursor: pointer;}
+button{
+  cursor: pointer;
+}
 
 .row {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.link{
+  cursor: no-drop;
+}
+
+.nav__links a {
+  position: relative;
+}
+
+.nav__links a:not(.nav__link--purple):after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  background-color: #6415ff;
+  transition: all 300ms ease;
+}
+
+.nav__links a:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+
+.nav__link--purple:hover,
+.btn__start:hover,
+.quality__btn--purple:hover{
+  background-color: rgb(80 17 204);
+}
+
+.contact:hover {
+  background-color: #fff;
+  color: #6415ff;
+  box-shadow: 4px 6px 8px #242424;
+}
+
+.start:hover{
+  background-color: rgb(255, 15, 15);
+  box-shadow: 4px 6px 8px #242424;
+}
+
+.nav__link--purple,
+.btn__start,
+.quality__btn--purple,
+.contact,
+.start {
+  padding: 16px 32px;
+  border-radius: 25px;
+  border: none;
+  background-color: #6415ff;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  transition: all 300ms ease;
+  cursor: not-allowed;
 }
 
 a{
@@ -35,11 +97,7 @@ nav {
   max-width: 1150px;
 }
 
-.nav__link:hover{
-  color: rgb(100,21,255);
-  border-bottom:2px solid rgb(100, 21, 255);
-  opacity: 1;
-}
+
 
 .logo__text{
   font-weight: 800;
@@ -652,6 +710,14 @@ PRICING
   border-top: 1px solid #e5e7eb;
 }
 
+.plan__btn--white:hover,
+.plan__btn--red:hover,
+.plan__btn--blue:hover{
+  transform: translate(1px, 1px);
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 300ms;
+}
+
 .plan__btn--white,
 .plan__btn--red,
 .plan__btn--blue{
@@ -660,6 +726,7 @@ PRICING
   border-radius: 30px;
   border: transparent;
   color: white;
+transition: transform 300ms;
 }
 
 .plan__btn--blue{
