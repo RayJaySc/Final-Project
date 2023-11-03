@@ -716,7 +716,7 @@ PRICING
   transform: translate(1px, 1px);
   box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.15);
   transition: transform 300ms;
-}
+} 
 
 .plan__btn--white,
 .plan__btn--red,
@@ -727,6 +727,7 @@ PRICING
   border: transparent;
   color: white;
 transition: transform 300ms;
+cursor: not-allowed;
 }
 
 .plan__btn--blue{
@@ -740,6 +741,20 @@ color: #6415ff;
 
 .plan__btn--red{
   background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100% );
+}
+
+.arrow__right,
+.arrow__left{
+  cursor: not-allowed;
+}
+
+.social:hover{
+  transform: scale(1.1);
+  transition: transform 300ms ease;
+}
+
+.social{
+  transition: transform 300ms ease;
 }
 
 /*
